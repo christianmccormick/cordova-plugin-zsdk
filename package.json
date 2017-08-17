@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-zsdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple wrapper around a couple of useful Zebra SDK methods.",
   "cordova": {
     "id": "cordova-plugin-zsdk",
