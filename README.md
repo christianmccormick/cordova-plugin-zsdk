@@ -7,7 +7,7 @@ Simple wrapper around a couple of useful Zebra SDK methods. Discover nearby Blue
 Install the plugin by running the following.
 
 ```
-cordova plugin install cordova-plugin-zsdk
+cordova plugin add cordova-plugin-zsdk
 ```
 
 ## Discovering Printers
