@@ -1,0 +1,23 @@
+{
+  "name": "cordova-plugin-zsdk",
+  "version": "0.1.0",
+  "description": "Simple wrapper around a couple of useful Zebra SDK methods.",
+  "cordova": {
+    "id": "cordova-plugin-zsdk",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.4.0"
+    }
+  ],
+  "author": "Christian McCormick",
+  "license": "ISC"
+}

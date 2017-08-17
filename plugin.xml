@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    id="cordova-plugin-zsdk"
+    version="0.1.0">
+
+  <name>ZSDK Plugin</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0" />
+  </engines>
+
+  <platform name="android">
+    <js-module src="www/zsdk.js" name="ZsdkPlugin">
+      <clobbers target="cordova.plugins.ZsdkPlugin" />
+    </js-module>
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="ZsdkPlugin">
+        <param name="android-package" value="org.apache.cordova.zsdk.ZsdkPlugin" />
+      </feature>
+    </config-file>
+
+    <config-file target="AndroidManifest.xml" parent="/manifest">
+      <uses-permission android:name="android.permission.BLUETOOTH" />
+      <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+      <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    </config-file>
+
+    <source-file src="src/android/ZsdkPlugin.java" target-dir="src/org/apache/cordova/zsdk/" />
+    <source-file src="src/android/libs/ZSDK_ANDROID_API.jar" target-dir="libs" />
+  </platform>
+
+</plugin>
